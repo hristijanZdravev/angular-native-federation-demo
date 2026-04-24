@@ -1,0 +1,40 @@
+<section class="dashboard-shell">
+  <div class="dashboard-hero">
+    <div>
+      <span class="dashboard-eyebrow">Angular Remote</span>
+      <h1>Operations dashboard for the federation demo.</h1>
+      <p>
+        This remote gives the shell a more product-like Angular experience with
+        guided navigation, live status tiles, and a polished content area.
+      </p>
+    </div>
+
+    <div class="dashboard-metrics">
+      <article class="metric-card">
+        <span>Runtime</span>
+        <strong>Angular 21</strong>
+      </article>
+      <article class="metric-card">
+        <span>Surface</span>
+        <strong>Standalone Routes</strong>
+      </article>
+      <article class="metric-card">
+        <span>Mode</span>
+        <strong>Demo Polished</strong>
+      </article>
+    </div>
+  </div>
+
+  <div class="dashboard-actions">
+    <button class="dashboard-button dashboard-button-primary" (click)="go('info')">
+      View overview
+    </button>
+    <button class="dashboard-button dashboard-button-secondary" (click)="go('example')">
+      Open snapshot
+    </button>
+  </div>
+
+  <section class="dashboard-content">
+    <router-outlet></router-outlet>
+  </section>
+</section>

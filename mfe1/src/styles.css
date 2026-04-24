@@ -1,0 +1,98 @@
+:root {
+  font-family: 'Segoe UI Variable Display', 'Trebuchet MS', 'Segoe UI', sans-serif;
+  color: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(15, 118, 110, 0.14), rgba(15, 118, 110, 0) 32%),
+    linear-gradient(180deg, #f7fafc 0%, #eef7f5 100%);
+}
+
+.mfe1-shell {
+  padding: 8px;
+}
+
+.mfe1-panel {
+  padding: 24px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(15, 118, 110, 0.12);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+}
+
+.mfe1-panel-accent {
+  background:
+    radial-gradient(circle at top right, rgba(20, 184, 166, 0.16), rgba(20, 184, 166, 0) 40%),
+    rgba(255, 255, 255, 0.94);
+}
+
+.mfe1-panel-header h2 {
+  margin: 8px 0 0;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.mfe1-tag {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.72rem;
+  color: #0f766e;
+}
+
+.mfe1-lead {
+  margin: 18px 0 0;
+  max-width: 60ch;
+  color: #475569;
+  line-height: 1.7;
+}
+
+.mfe1-feature-grid,
+.mfe1-example-grid {
+  display: grid;
+  gap: 14px;
+  margin-top: 22px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.mfe1-feature-card,
+.mfe1-example-grid article {
+  padding: 18px;
+  border-radius: 20px;
+  background: rgba(241, 245, 249, 0.78);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+}
+
+.mfe1-feature-card strong,
+.mfe1-example-grid strong {
+  display: block;
+  color: #0f172a;
+  font-size: 1.05rem;
+}
+
+.mfe1-feature-card p {
+  margin: 10px 0 0;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.example-label {
+  display: block;
+  margin-bottom: 10px;
+  color: #64748b;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}

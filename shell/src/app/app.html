@@ -1,0 +1,68 @@
+<div class="shell-page">
+  <div class="shell-backdrop shell-backdrop-one"></div>
+  <div class="shell-backdrop shell-backdrop-two"></div>
+
+  <section class="shell-hero">
+    <div class="shell-copy">
+      <span class="shell-eyebrow">Native Federation Demo</span>
+      <h1>One shell, two remotes, a cleaner live-demo story.</h1>
+      <p>
+        The shell coordinates Angular and React micro frontends in a polished
+        workspace that feels intentional instead of stitched together.
+      </p>
+    </div>
+
+    <div class="shell-summary">
+      <div class="summary-card">
+        <span class="summary-label">Remote Apps</span>
+        <strong>{{ remotes.length }}</strong>
+      </div>
+      <div class="summary-card">
+        <span class="summary-label">Stack</span>
+        <strong>Angular + React</strong>
+      </div>
+      <div class="summary-card">
+        <span class="summary-label">Experience</span>
+        <strong>Demo Ready</strong>
+      </div>
+    </div>
+  </section>
+
+  <section class="shell-nav-panel">
+    <div class="shell-nav-header">
+      <div>
+        <span class="shell-section-label">Available Remotes</span>
+        <h2>Jump between experiences</h2>
+      </div>
+      <button class="shell-home-link" type="button" (click)="navigateTo()">
+        Overview
+      </button>
+    </div>
+
+    <div class="remote-grid">
+      @for (r of remotes; track r.routePath) {
+      <button
+        class="remote-card"
+        type="button"
+        [class.remote-card-active]="isActive(r.routePath)"
+        (click)="navigateTo(r.routePath)"
+      >
+        <span class="remote-kicker">{{ r.remoteName }}</span>
+        <strong>{{ r.displayName }}</strong>
+        <p>
+          {{
+            r.isAngular
+              ? 'Angular dashboard flow with nested routes and shared shell framing.'
+              : 'React web component embedded into the shell with matching visual polish.'
+          }}
+        </p>
+        <span class="remote-link">Open experience</span>
+      </button>
+      }
+    </div>
+  </section>
+
+  <main class="shell-stage">
+    <router-outlet></router-outlet>
+  </main>
+</div>

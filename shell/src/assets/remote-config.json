@@ -1,0 +1,17 @@
+{
+  "mfe1": {
+    "remoteEntry": "http://localhost:4201/remoteEntry.json",
+    "exposedModule": "./routes",
+    "displayName": "Remote Angular",
+    "remoteName": "mfe1",
+    "routePath": "angular",
+    "isAngular": true
+  },
+  "mfe2": {
+    "remoteEntry": "http://localhost:4202/remoteEntry.json",
+    "exposedModule": "./web-component",
+    "displayName": "Remote React",
+    "routePath": "react",
+    "remoteName": "mfe2"
+  }
+}
