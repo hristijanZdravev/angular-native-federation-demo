@@ -27,7 +27,7 @@ Start each app in a separate terminal:
 ```bash
 cd shell && npm start
 cd mfe1 && npm start
-cd mfe2 && npm run serve
+cd mfe2 && npm start
 ```
 
 For local React development:
